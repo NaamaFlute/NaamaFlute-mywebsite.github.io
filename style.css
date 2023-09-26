@@ -1,0 +1,252 @@
+body {
+    display: grid;
+    place-items: center; /* Shorthand for both align-items and justify-content */
+    height: 100vh; /* Ensure the grid takes up the full viewport height */
+    background-color: #F8F8F8;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+
+h1, h2, h3, h4 {
+    font-family: 'Inria Serif', serif;
+    letter-spacing: 0.1em;
+}
+
+/*h1, h2 {
+    letter-spacing: 0.1em;
+}*/
+p {
+    color: #060606a5;
+    font-size: 0.8rem;
+}
+/* Center the hero section content */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center text horizontally */
+    justify-content: space-between;
+}
+
+.naama {
+    border-radius: 50%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  h1 {
+    padding: none;
+}
+
+.subTitle p {
+    padding-bottom: 50px;
+}
+
+.workSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center text horizontally */
+    justify-content: center;
+}
+
+
+.workPhotos {
+    display: flex;
+}
+
+.experience {
+    text-align: left;
+    margin: 10px; /* Adjust margin for spacing */
+    padding: 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding and border within element dimensions */
+    /*text-align: center;  Center-align the contents horizontally within .experience */
+    text-wrap: balance;
+    min-width: 150px;
+    max-width: 300px;
+}
+
+.workImg {
+    border-radius: 10px;
+    /*min-width: 150px;
+    max-width: 300px;  Set a maximum width to control image size on larger screens */
+    width: 100%; /* Set the width to 100% of the parent container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    }
+
+.experience h4,
+.experience p {
+    text-align: left; /* Left-align the <h4> and <p> elements */
+    margin-top: 10 ; /* Remove default margin to ensure a clean layout */
+    /*how to prevent taxt going beyond the u=img?*/
+}
+
+/**** Get In Touch section *****/
+.getInTouch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center text horizontally */
+}
+ 
+.getInTouch p {
+    padding-bottom: 20px;
+}
+
+/* Container for email input and button */
+.subscription-container {
+    display: flex; /* Display the elements in a row */
+    align-items: center; /* Vertically center-align the content */
+    max-width: 300px; /* Adjust the maximum width as needed */
+    margin: 20px auto; /* Center-align the container and add spacing */
+}
+
+/* Email input field */
+.email-input {
+    flex: 1; /* Allow the input to expand and fill available space */
+    padding: 10px; /* Add padding for spacing */
+    border: 1px solid #ccc; /* Add a border for visual separation */
+    border-radius: 4px; /* Round the corners */
+}
+
+/* Subscribe button */
+.subscribe-button {
+    background-color: #E3B04B;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px; /* Adjust padding as needed */
+    cursor: pointer;
+    margin-left: 10px; /* Add spacing between input and button */
+}
+
+svg {
+    padding: 5px;
+}
+.footer {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: xx-small;
+}
+
+
+hr {
+    border: dotted #E3B04B 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 70px auto;
+    }
+    
+
+.social-icons {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* Buttons Styling on home page and about page */
+.btn,
+.btnTwo {
+    border-radius: 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+}
+
+.btn {
+    background-color: #E3B04B;
+    color: #fff;
+}
+
+.btnTwo {
+    background-color: white;
+    color: #E3B04B;
+}
+
+a:hover {       
+    color: #180362;
+}
+
+a {
+    margin: 10px 5px;
+}
+button:hover {       
+    color: #180362;
+}
+
+a {
+    margin: 10px 5px;
+}
+
+
+/***** About Me Page****/
+.resume {
+    text-align: left;
+    min-width: 150px;
+    max-width: 500px;
+    margin-bottom: 50px;
+}
+
+ .resume p {
+    text-wrap: balance;
+    
+ }
+
+
+/* Media query for wide screens */
+@media (min-width: 768px) {
+    .experience {
+        text-align: left; /* Left-align the contents within .experience on wide screens */
+    }
+
+    .workPhotos {
+        display: flex;
+        flex-direction: row; /* Horizontal layout on wide screens */
+        justify-content: center; /* Center-align the contents horizontally */
+    }
+
+    .workImg {
+        min-width: 150px; /* Minimum width for wide screens */
+        max-width: 300px; /* Maximum width for wide screens */
+        width: 100%; /* Responsive width */
+    }
+    
+}
+/* Media query for screens at least 1190px wide */
+@media (min-width: 1190px) {
+    .workSection {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .experience {
+        text-align: left; /* Left-align the contents within .experience on wide screens */
+    }
+
+    .workPhotos {
+        display: flex;
+        flex-direction: column; /* Horizontal layout on wide screens */
+        justify-content: center; /* Center-align the contents horizontally */
+    }
+    .subscription-container {
+        display: flex;
+        flex-direction: column; /* Horizontal layout on wide screens */
+        justify-content: center; /* Center-align the contents horizontally */
+        align-items: center;
+    }
+    .subscribe-button {
+        margin: 10px;
+
+    }
+}
+
+@media (max-width: 300px) {
+.heroBtn {
+    display: flex;
+    flex-direction: column; /* Horizontal layout on wide screens */
+    justify-content: center; /* Center-align the contents horizontally */
+    align-items: center;
+}
+}
